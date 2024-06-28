@@ -7,11 +7,9 @@ import { playbackService } from '../../MusicPlayerService'
 const ControlCenter = () => {
 
     const playBackState = usePlaybackState()
-    // next button
     const skipToNext = async () => {
         await TrackPlayer.skipToNext()
     }
-    // Previous button
     const skipToPrevious = async () => {
         await TrackPlayer.skipToPrevious()
     }
